@@ -1,6 +1,6 @@
 # Por que trabalhar na Contabilizei
 
-**Eleita a melhor startup B2B da América Latina em 2016**, a Contabilizei é um escritório de contabilidade online, líder de mercado, com sede em Curitiba (PR). Nosso propósito é resolver a dor e burocracia de micro e pequenas empresas ao se manterem regulares com o governo. Somos contadores, só que online, simples assim. Acreditamos no poder da tecnologia para melhorar continuamente a vida das pessoas. 
+**Eleita a melhor startup B2B da América Latina em 2016, a Contabilizei** é um escritório de contabilidade online, líder de mercado, com sede em Curitiba (PR). Nosso propósito é resolver a dor e burocracia de micro e pequenas empresas ao se manterem regulares com o governo. Somos contadores, só que online, simples assim. Acreditamos no poder da tecnologia para melhorar continuamente a vida das pessoas. 
 
 
 Se você tem espírito e comportamento empreendedor, muita disposição e proatividade para trabalhar em uma empresa em franca expansão, você é um forte candidato :)
@@ -30,10 +30,10 @@ Mais informações sobre a vaga você encontra aqui: [Desenvolvedor Front-end na
 
 Vamos ser práticos e diretos, se você quer trabalhar conosco siga os passos abaixo:
 
-* Faça um "fork" desse projeto para sua conta git.
+* Faça um "fork" desse projeto para sua conta git (pode ser no GitHub ou BitBucket).
 * Implemente o desafio descrito no tópico abaixo.
 * Faça um push para seu repositório com o desafio implementado.
-* Envie um email para (queroserninja@contabilizei.com.br) avisando que finalizou o desafio com a url do seu fork.
+* Envie um email para (souninja@contabilizei.com.br) avisando que finalizou o desafio com a url do seu fork.
 * Cruze os dedos e aguarde nosso contato.
 
 # O desafio (Simulador de Impostos)
