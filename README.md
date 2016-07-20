@@ -81,7 +81,7 @@ Query parameters
 | ------------- |:-------------:| :------------------------------------------------------------------------------------------------|
 | success       | boolean       | Indica sucesso ou não na requisição do método|
 | errors        | array(String) | Lista de mensagens de erros|
-| objects       | array(object) | Lista de objetos impostos|
+| objects       | array(object) | Lista de objetos impostos (descrição, valor, alíquota (%))|
 
 **Calcular impostos Lucro Presumido**  *GET /rest/simulador/imposto/lucropresumido*
 
@@ -104,7 +104,7 @@ Query parameters
 | ------------- |:-------------:| :------------------------------------------------------------------------------------------------|
 | success       | boolean       | Indica sucesso ou não na requisição do método|
 | errors        | array(String) | Lista de mensagens de erros|
-| objects       | array(object) | Lista de objetos impostos|
+| objects       | array(object) | Lista de objetos impostos (descrição, valor, alíquota (%))|
 
 **Atenção:** os impostos e valores retornados são ilustrativos e podem não corresponder a informações reais.
 
