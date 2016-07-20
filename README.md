@@ -106,7 +106,7 @@ Query parameters
 | errors        | array(String) | Lista de mensagens de erros|
 | objects       | array(object) | Lista de objetos impostos|
 
-**Atenção:** os impostos e valores retornados são ilustrativos e podem não correspondem a informações reais.
+**Atenção:** os impostos e valores retornados são ilustrativos e podem não corresponder a informações reais.
 
 ### Tecnologias
 
@@ -120,7 +120,7 @@ Devem ser utilizadas as seguintes tecnologias :
 
 ### Arquitetura da solução
 
-Explique o por que das decisões de solução que foram adotas na implementação do desafio.
+Adicione um arquivo README junto aos arquivos do projeto e explique a solução adota na implementação do desafio e o funcionamento do seu projeto.
 
 ### Avaliação
 
