@@ -7,7 +7,7 @@ Se você tem espírito e comportamento empreendedor, muita disposição e proati
 
 Como Desenvolvedor Front-end você irá trabalhar juntamente com uma excelente equipe de desenvolvedores ninja, tendo foco na criação produtos que garantam a melhor experiência para nossos usuários.
 
-O que fazem os Ninjas da Contabilizei? O que comem (e bebem)? Onde vivem?
+### O que fazem os Ninjas da Contabilizei? O que comem (e bebem)? Onde vivem?
 
 Somos um time de desenvolvimento ágil, focado em fazer as coisas acontecerem. Trabalhamos com Kanban, entregas contínuas, Git, Cloud, aplicações distribuídas e mais uma porrada de tecnologias novas... Queremos que nosso cliente tenha o produto e a experiência mais fodásticos do planeta. Gostamos de compartilhar ideias, testar tecnologias e de cerveja :)
 
@@ -115,12 +115,12 @@ Devem ser utilizadas as seguintes tecnologias :
 * HTML5 e CSS3 
 * Javascript puro / JQuery
 * Bootstrap (http://getbootstrap.com/)
-* AngularJS 1.4.X (desejável)
+* AngularJS 1.4.x (desejável)
 * Angular Material Design (desejával)
 
 ### Arquitetura da solução
 
-Adicione um arquivo README junto aos arquivos do projeto e explique a solução adota na implementação do desafio e o funcionamento do seu projeto.
+Adicione um arquivo README ao projeto explicando o funcionamento e a solução adotada na sua implementação do desafio.
 
 ### Avaliação
 
