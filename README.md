@@ -108,7 +108,7 @@ Query parameters
 
 **Atenção:** os impostos e valores retornados são ilustrativos e podem não correspondem a informações reais.
 
-## Tecnologias
+### Tecnologias
 
 Devem ser utilizadas as seguintes tecnologias :
 
@@ -118,11 +118,11 @@ Devem ser utilizadas as seguintes tecnologias :
 * AngularJS 1.4.X (desejável)
 * Angular Material Design (desejával)
 
-## Arquitetura da solução
+### Arquitetura da solução
 
 Explique o por que das decisões de solução que foram adotas na implementação do desafio.
 
-## Avaliação
+### Avaliação
 
 Entre os critérios de avaliação estão:
 
