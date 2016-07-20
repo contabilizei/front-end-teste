@@ -134,5 +134,5 @@ Entre os critérios de avaliação estão:
 
 # Sobre você
 
-Queremos saber um pouco mais sobre você :) Por favor, responda o questionário do arquivo questions.rmd e envie junto com seu projeto.
+Queremos saber um pouco mais sobre você :) Por favor, responda o questionário do arquivo [questions.md](questions.md) e envie junto com seu projeto.
 
