@@ -30,7 +30,7 @@ Mais informações sobre a vaga você encontra aqui: [Desenvolvedor Front-end na
 
 Vamos ser práticos e diretos, se você quer trabalhar conosco siga os passos abaixo:
 
-* Faça um "fork" desse projeto para sua conta git (pode ser no GitHub ou BitBucket).
+* Faça um "fork" desse projeto para sua conta GitHub.
 * Implemente o desafio descrito no tópico abaixo.
 * Faça um push para seu repositório com o desafio implementado.
 * Envie um email para (souninja@contabilizei.com.br) avisando que finalizou o desafio com a url do seu fork.
@@ -42,6 +42,7 @@ Crie uma *Single Page Application* de um **Simulador de Impostos para empresas d
 Para fazer a simulação dos impostos, nós disponibilizamos para você uma RESTFul API com os seguintes serviços:
 
 Host: [https://app-dot-contabilizei-jobs.appspot.com](https://app-dot-contabilizei-jobs.appspot.com)
+
 WADL: [https://app-dot-contabilizei-jobs.appspot.com/rest/application.wadl](https://app-dot-contabilizei-jobs.appspot.com/rest/application.wadl)
 
 **Listar atividade**  *GET /rest/simulador/atividades*
