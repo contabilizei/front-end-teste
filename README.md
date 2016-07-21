@@ -115,10 +115,12 @@ Query parameters
 Devem ser utilizadas as seguintes tecnologias :
 
 * HTML5 e CSS3 
-* Javascript puro / JQuery
+* Javascript puro / JQuery (e plugins)
 * Bootstrap (http://getbootstrap.com/)
-* AngularJS 1.4.x (desejável)
-* Angular Material Design (desejával)
+* AngularJS 1.x (opcional)
+* Angular Material Design (opcional)
+
+**Atenção:** Não utilize outros frameworks ou tecnologias não mencionados.
 
 ### Arquitetura da solução
 
