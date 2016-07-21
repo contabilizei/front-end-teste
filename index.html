@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Front-end-teste by contabilizei</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Front-end-teste</h1>
+        <h2>Desafio prático para desenvolvedores front-end que querem entrar para nosso time de ninjas :)</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/contabilizei/front-end-teste/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/contabilizei/front-end-teste/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/contabilizei/front-end-teste" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="por-que-trabalhar-na-contabilizei" class="anchor" href="#por-que-trabalhar-na-contabilizei" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Por que trabalhar na Contabilizei</h1>
+
+<p><strong>Eleita a melhor startup B2B da América Latina em 2016, a Contabilizei</strong> é um escritório de contabilidade online, líder de mercado, com sede em Curitiba (PR). Nosso propósito é resolver a dor e burocracia de micro e pequenas empresas ao se manterem regulares com o governo. Somos contadores, só que online, simples assim. Acreditamos no poder da tecnologia para melhorar continuamente a vida das pessoas. </p>
+
+<p>Se você tem espírito e comportamento empreendedor, muita disposição e proatividade para trabalhar em uma empresa em franca expansão, você é um forte candidato :)</p>
+
+<p>Como Desenvolvedor Front-end você irá trabalhar juntamente com uma excelente equipe de desenvolvedores ninja, tendo foco na criação produtos que garantam a melhor experiência para nossos usuários.</p>
+
+<h3>
+<a id="o-que-fazem-os-ninjas-da-contabilizei-o-que-comem-e-bebem-onde-vivem" class="anchor" href="#o-que-fazem-os-ninjas-da-contabilizei-o-que-comem-e-bebem-onde-vivem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>O que fazem os Ninjas da Contabilizei? O que comem (e bebem)? Onde vivem?</h3>
+
+<p>Somos um time de desenvolvimento ágil, focado em fazer as coisas acontecerem. Trabalhamos com Kanban, entregas contínuas, Git, Cloud, aplicações distribuídas e mais uma porrada de tecnologias novas... Queremos que nosso cliente tenha o produto e a experiência mais fodásticos do planeta. Gostamos de compartilhar ideias, testar tecnologias e de cerveja :)</p>
+
+<h1>
+<a id="o-trabalho-por-aqui" class="anchor" href="#o-trabalho-por-aqui" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>O trabalho por aqui</h1>
+
+<p>Que tal fazer parte de um time com atitude “get Fˆ%#ing things done”? Participar de uma das maiores disrupções no mercado? Ter a oportunidade de trabalhar com tecnologias e conceitos inovadores, como:</p>
+
+<ul>
+<li>Práticas ágeis como Kanban / Scrum</li>
+<li>Google Cloud Platform</li>
+<li>Escalabilidade</li>
+<li>Micro services e aplicações distribuídas</li>
+<li>Kubernetes</li>
+<li>Git</li>
+<li>AngularJs</li>
+<li>Material Design</li>
+<li>BDD</li>
+</ul>
+
+<p>Mais informações sobre a vaga você encontra aqui: <a href="https://jobs.lever.co/contabilizei/9dee5e3a-34bd-4b8e-9fc6-0b38db170788">Desenvolvedor Front-end na Contabilizei</a></p>
+
+<h1>
+<a id="o-que-preciso-fazer" class="anchor" href="#o-que-preciso-fazer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>O que preciso fazer?</h1>
+
+<p>Vamos ser práticos e diretos, se você quer trabalhar conosco siga os passos abaixo:</p>
+
+<ul>
+<li>Faça um "fork" desse projeto para sua conta git (pode ser no GitHub ou BitBucket).</li>
+<li>Implemente o desafio descrito no tópico abaixo.</li>
+<li>Faça um push para seu repositório com o desafio implementado.</li>
+<li>Envie um email para (<a href="mailto:souninja@contabilizei.com.br">souninja@contabilizei.com.br</a>) avisando que finalizou o desafio com a url do seu fork.</li>
+<li>Cruze os dedos e aguarde nosso contato.</li>
+</ul>
+
+<h1>
+<a id="o-desafio-simulador-de-impostos" class="anchor" href="#o-desafio-simulador-de-impostos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>O desafio (Simulador de Impostos)</h1>
+
+<p>Crie uma <em>Single Page Application</em> de um <strong>Simulador de Impostos para empresas de Lucro Presumido ou Simples Nacional</strong>.
+Para fazer a simulação dos impostos, nós disponibilizamos para você uma RESTFul API com os seguintes serviços:</p>
+
+<p>Host: <a href="https://app-dot-contabilizei-jobs.appspot.com">https://app-dot-contabilizei-jobs.appspot.com</a>
+WADL: <a href="https://app-dot-contabilizei-jobs.appspot.com/rest/application.wadl">https://app-dot-contabilizei-jobs.appspot.com/rest/application.wadl</a></p>
+
+<p><strong>Listar atividade</strong>  <em>GET /rest/simulador/atividades</em></p>
+
+<p>Retorna uma lista de atividades econômicas.</p>
+
+<p><strong>Responses</strong></p>
+
+<p>(<em>application/json</em>)</p>
+
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th align="center">Tipo</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td align="center">boolean</td>
+<td align="left">Indica sucesso ou não na requisição do método</td>
+</tr>
+<tr>
+<td>errors</td>
+<td align="center">array(String)</td>
+<td align="left">Lista de mensagens de erros</td>
+</tr>
+<tr>
+<td>objects</td>
+<td align="center">array(object)</td>
+<td align="left">Lista de objetos atividade (cod, descricao)</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Calcular impostos Simples Nacional</strong>  <em>GET /rest/simulador/imposto/simples</em></p>
+
+<p>Retorna uma lista com o imposto do regime tributário Simples Nacional que é calculado sobre o faturamento da empresa e impostos de folha de pagamento caso houver.</p>
+
+<p><strong>Request</strong></p>
+
+<p>Query parameters</p>
+
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th align="center">Tipo</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fatanterior</td>
+<td align="center">float</td>
+<td align="left">Soma do valor faturamento da empresa nos últimos 12 meses, excluindo-se o faturamento de mês da simulação</td>
+</tr>
+<tr>
+<td>faturamento</td>
+<td align="center">float</td>
+<td align="left">Valor do faturamento da empresa no mês referente à simulação</td>
+</tr>
+<tr>
+<td>folha</td>
+<td align="center">float</td>
+<td align="left">Soma do valor da folha de pagamento da empresa no mês referente à simulação</td>
+</tr>
+<tr>
+<td>codatividade</td>
+<td align="center">int</td>
+<td align="left">Código da atividade econômica principal da empresa</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Responses</strong></p>
+
+<p>(<em>application/json</em>)</p>
+
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th align="center">Tipo</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td align="center">boolean</td>
+<td align="left">Indica sucesso ou não na requisição do método</td>
+</tr>
+<tr>
+<td>errors</td>
+<td align="center">array(String)</td>
+<td align="left">Lista de mensagens de erros</td>
+</tr>
+<tr>
+<td>objects</td>
+<td align="center">array(object)</td>
+<td align="left">Lista de objetos impostos (descrição, valor, alíquota (%))</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Calcular impostos Lucro Presumido</strong>  <em>GET /rest/simulador/imposto/lucropresumido</em></p>
+
+<p>Retorna uma lista com os impostos do regime tributário Lucro Presumido que são calculados sobre o faturamento da empresa e impostos de folha de pagamento caso houver.</p>
+
+<p><strong>Request</strong></p>
+
+<p>Query parameters</p>
+
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th align="center">Tipo</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>faturamento</td>
+<td align="center">float</td>
+<td align="left">Valor do faturamento da empresa no mês referente à simulação</td>
+</tr>
+<tr>
+<td>folha</td>
+<td align="center">float</td>
+<td align="left">Soma do valor da folha de pagamento da empresa no mês referente à simulação</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Responses</strong></p>
+
+<p>(<em>application/json</em>)</p>
+
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th align="center">Tipo</th>
+<th align="left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td align="center">boolean</td>
+<td align="left">Indica sucesso ou não na requisição do método</td>
+</tr>
+<tr>
+<td>errors</td>
+<td align="center">array(String)</td>
+<td align="left">Lista de mensagens de erros</td>
+</tr>
+<tr>
+<td>objects</td>
+<td align="center">array(object)</td>
+<td align="left">Lista de objetos impostos (descrição, valor, alíquota (%))</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Atenção:</strong> os impostos e valores retornados são ilustrativos e podem não corresponder a informações reais.</p>
+
+<h3>
+<a id="tecnologias" class="anchor" href="#tecnologias" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tecnologias</h3>
+
+<p>Devem ser utilizadas as seguintes tecnologias :</p>
+
+<ul>
+<li>HTML5 e CSS3 </li>
+<li>Javascript puro / JQuery</li>
+<li>Bootstrap (<a href="http://getbootstrap.com/">http://getbootstrap.com/</a>)</li>
+<li>AngularJS 1.4.x (desejável)</li>
+<li>Angular Material Design (desejával)</li>
+</ul>
+
+<h3>
+<a id="arquitetura-da-solução" class="anchor" href="#arquitetura-da-solu%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arquitetura da solução</h3>
+
+<p>No arquivo README do projeto explique o funcionamento e a solução adotada na sua implementação do desafio.</p>
+
+<h3>
+<a id="avaliação" class="anchor" href="#avalia%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Avaliação</h3>
+
+<p>Entre os critérios de avaliação estão:</p>
+
+<ul>
+<li>Usabilidade</li>
+<li>Criatividade</li>
+<li>Código limpo e organização</li>
+<li>Documentação de código</li>
+<li>Documentação do projeto (readme)</li>
+<li>Performance</li>
+</ul>
+
+<h1>
+<a id="sobre-você" class="anchor" href="#sobre-voc%C3%AA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sobre você</h1>
+
+<p>Queremos saber um pouco mais sobre você :) Por favor, responda o questionário do arquivo <a href="questions.md">questions.md</a> e envie junto com seu projeto.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
