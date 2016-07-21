@@ -41,7 +41,8 @@ Vamos ser práticos e diretos, se você quer trabalhar conosco siga os passos ab
 Crie uma *Single Page Application* de um **Simulador de Impostos para empresas de Lucro Presumido ou Simples Nacional**.
 Para fazer a simulação dos impostos, nós disponibilizamos para você uma RESTFul API com os seguintes serviços:
 
-Host: [https://contabilizei-jobs.appspot.com/rest/simulador/imposto](https://contabilizei-jobs.appspot.com)
+Host: [https://app-dot-contabilizei-jobs.appspot.com](https://app-dot-contabilizei-jobs.appspot.com)
+WADL: [https://app-dot-contabilizei-jobs.appspot.com/rest/application.wadl](https://app-dot-contabilizei-jobs.appspot.com/rest/application.wadl)
 
 **Listar atividade**  *GET /rest/simulador/atividades*
 
@@ -120,7 +121,7 @@ Devem ser utilizadas as seguintes tecnologias :
 
 ### Arquitetura da solução
 
-Adicione um arquivo README ao projeto explicando o funcionamento e a solução adotada na sua implementação do desafio.
+No arquivo README do projeto explique o funcionamento e a solução adotada na sua implementação do desafio.
 
 ### Avaliação
 
@@ -128,8 +129,9 @@ Entre os critérios de avaliação estão:
 
 * Usabilidade
 * Criatividade
-* Código limpo
-* Organização e documentação
+* Código limpo e organização
+* Documentação de código
+* Documentação do projeto (readme)
 * Performance
 
 # Sobre você
