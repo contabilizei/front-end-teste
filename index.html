@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+    <head>
+        <title>Simulador de Impostos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="css/myStyle.css">
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/functions.js"></script>
+    </head>
+    <body>
+        <!-- Menu Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home">HOME</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#listarAtividades">LISTAR ATIVIDADES</a></li>
+                        <li><a href="#impostoSimplesNacional">CALCULAR ISN</a></li>
+                        <li><a href="#impostoLucroPresumido">CALCULAR ILP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Fim Menu Navbar -->
+        <!-- Home -->
+        <section id="home">
+            <div class="container-fluid bg-3 text-center">
+            </div>
+            <div class="container-fluid bg-1 text-center">
+                <h3 class="margin">Simulador de Impostos</h3>
+                <h3>Seja bem-vindo ao Simulador de Impostos para empresas de Lucro Presumido ou Simples Nacional.</h3>
+            </div>
+            <br/>
+            <div class="container-fluid bg-3 text-center"></div>
+            <div class="container-fluid bg-3 text-center"></div>
+            <div class="container-fluid bg-3 text-center"></div>
+            <div class="container-fluid bg-3 text-center"></div>
+            </div>
+        </section>
+        <!-- Fim Home -->
+        <!-- Atividades -->
+        <section id="listarAtividades">
+            <div class="container-fluid bg-3 text-center" ng-controller="ControllerListarAtividades">
+                <h3 class="margin">Listar Atividades</h3>
+                <div class="row">
+                    <h3>Consulte aqui o código e a descrição da atividade econômica desejada.</h3>
+                </div>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalResultado" ng-click="ListarAtividades()">Consultar</button>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="modal fade" id="modalResultado" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Resultado</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Success: {{items.success}}</p>
+                                <p>Errors: {{items.errors}}</p>
+                                <table class="table table-hover table-striped">
+                                    <thead ng-hide="items.errors.length">
+                                        <tr>
+                                            <th data-column-id="cod">Código</th>
+                                            <th data-column-id="descricao">Descrição</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in items.objects">
+                                            <td>{{item.cod}}</td>
+                                            <td>{{item.descricao}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim Atividades -->
+        <!-- Imposto SN -->
+        <section id="impostoSimplesNacional">
+            <div class="container-fluid bg-3 text-center" ng-controller="ControllerSimplesNacional">
+                <h3 class="margin">Cálculo de Impostos Simples Nacional</h3>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        R$<input class="form-control" id="fatanteriorSN" ng-model="fatanteriorSN" type="number" step="0.01">
+                        <p>Informe aqui soma do valor faturamento da empresa nos últimos 12 meses, excluindo-se o faturamento de mês da simulação.</p>
+                    </div>
+                    <div class="col-sm-3">
+                        R$<input class="form-control" id="faturamentoSN" ng-model="faturamentoSN" type="number" step="0.01">
+                        <p>Informe aqui o valor do faturamento da empresa no mês referente à simulação.</p>
+                    </div>
+                    <div class="col-sm-3">
+                        R$<input class="form-control" id="folhaSN" ng-model="folhaSN" type="number" step="0.01">
+                        <p>Informe aqui a soma do valor da folha de pagamento da empresa no mês referente à simulação.</p>
+                    </div>
+                    <div class="col-sm-3">
+                        Código<input type="number" class="form-control" id="codatividadeSN" ng-model="codatividadeSN">
+                        <p>Informe aqui o código da atividade econômica principal da empresa.</p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalResultadoSN" ng-click="CalcularImpostosSimplesNacional()">Calcular</button>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <!-- Modal content-->	
+                <div class="modal fade" id="modalResultadoSN" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Resultado</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Success: {{items.success}}</p>
+                                <p>Errors: {{items.errors}}</p>
+                                <table class="table table-hover table-striped">
+                                    <thead ng-hide="items.errors.length">
+                                        <tr>
+                                            <th data-column-id="descricao">Descrição</th>
+                                            <th data-column-id="valor">Valor</th>
+                                            <th data-column-id="aliquota">Alíquota</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in items.objects">
+                                            <td>{{item.descricao}}</td>
+                                            <td>{{item.valor}}</td>
+                                            <td>{{item.aliquota}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim Imposto SN -->
+        <!-- Imposto LP -->
+        <section id="impostoLucroPresumido">
+            <div class="container-fluid bg-3 text-center" ng-controller="ControllerLucroPresumido">
+                <h3 class="margin">Cálculo de Impostos Lucro Presumido</h3>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4 col-md-offset-2">
+                        R$<input class="form-control" id="faturamentoLP" ng-model="faturamentoLP" type="number" step="0.01">
+                        <p>Informe aqui o valor do faturamento da empresa no mês referente à simulação.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        R$<input class="form-control" id="folhaLP" ng-model="folhaLP" type="number" step="0.01">
+                        <p>Informe aqui a soma do valor da folha de pagamento da empresa no mês referente à simulação.</p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalResultadoLP" ng-click="CalcularImpostosLucroPresumido()">Calcular</button>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <div class="container-fluid bg-3 text-center"></div>
+                <!-- Modal content-->
+                <div class="modal fade" id="modalResultadoLP" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Resultado</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Success: {{items.success}}</p>
+                                <p>Errors: {{items.errors}}</p>
+                                <table class="table table-hover table-striped">
+                                    <thead ng-hide="items.errors.length">
+                                        <tr>
+                                            <th>Descrição</th>
+                                            <th>Valor</th>
+                                            <th>Alíquota</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in items.objects">
+                                            <td>{{item.descricao}}</td>
+                                            <td>{{item.valor}}</td>
+                                            <td>{{item.aliquota}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!-- Fim Imposto LP -->
+    </body>
+</html>
