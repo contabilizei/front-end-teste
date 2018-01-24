@@ -1,6 +1,8 @@
 
 ## Fale um pouco sobre você :)
 
+### 0) Descreve responsabilidades de um profissional front-end para você.
+
 ### 1) Por que se interessou pela oportunidade? 
 
 ### 2) O que espera da Contabilizei? 
